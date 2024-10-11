@@ -44,7 +44,7 @@ export default function HomePage() {
           </div>
           <div className="just flex h-full w-1/2 items-center justify-center">
             <div className="flex flex-col gap-4">
-              <Button size="lg" className="w-[400px] py-6">
+              <Button size="lg" className="w-[400px] py-6 text-white">
                 Join Lobby
               </Button>
               <Button size="lg" variant="outline" className="w-[400px] py-6">
