@@ -20,8 +20,6 @@ export default function HomePage() {
   */
   const { data: session } = useSession();
 
-  console.log(session);
-
   return (
     <main className="flex h-full w-full">
       {session ? (
