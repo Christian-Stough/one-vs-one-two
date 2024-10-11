@@ -6,7 +6,11 @@ import DiscordIcon from "./_components/icons/discord";
 import Image from "next/image";
 import type { Session } from "next-auth";
 
-export default function Client({ serverSession }: { serverSession: Session }) {
+export default function Client({
+  serverSession,
+}: {
+  serverSession: Session | null;
+}) {
   /*
   SESSION:
  { 
@@ -22,6 +26,8 @@ export default function Client({ serverSession }: { serverSession: Session }) {
   let { data: session } = useSession();
 
   if (!session && serverSession) session = serverSession;
+
+  console.log(session);
 
   return (
     <main className="flex h-full w-full">
